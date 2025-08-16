@@ -432,6 +432,32 @@ header {
 }
 
 /* Contact Section */
+
+/* Add to styles.css */
+.alert {
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 4px;
+    font-size: 0.9rem;
+}
+
+.alert-success {
+    background-color: #d4edda;
+    border: 1px solid #c3e6cb;
+    color: #155724;
+}
+
+.alert-danger {
+    background-color: #f8d7da;
+    border: 1px solid #f5c6cb;
+    color: #721c24;
+}
+
+.error {
+    color: #dc3545;
+    font-size: 0.8rem;
+    margin-top: 5px;
+}
 #contact {
     background: linear-gradient(135deg, var(--secondary) 0%, var(--dark) 100%);
     color: white;

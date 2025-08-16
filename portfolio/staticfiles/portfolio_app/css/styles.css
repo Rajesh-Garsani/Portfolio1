@@ -231,7 +231,8 @@ header {
     width: 90%;
     height: 90%;
     border-radius: 50%;
-    background: url('images/intro.png') center/cover no-repeat;
+    background: url('../images/intro.png') center/cover no-repeat;
+
     border: 5px solid white;
 }
 
@@ -295,6 +296,7 @@ header {
     color: var(--primary);
     font-size: 1.2rem;
 }
+
 
 /* Skills Section */
 #skills {
