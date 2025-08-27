@@ -1,17 +1,23 @@
 from django.db import models
 
 
+
 class Project(models.Model):
     title = models.CharField(max_length=200)
     description = models.TextField()
     tags = models.CharField(max_length=200)
-    image_url = models.URLField()
+    image_url = models.CharField(max_length=200)
     demo_link = models.URLField(blank=True)
     source_link = models.URLField(blank=True)
 
     def __str__(self):
         return self.title
 
+    def get_tags_list(self):
+        """Convert comma-separated tags to list"""
+        if self.tags:
+            return [tag.strip() for tag in self.tags.split(',')]
+        return []
 
 class Skill(models.Model):
     CATEGORY_CHOICES = [
